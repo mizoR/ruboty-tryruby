@@ -4,10 +4,7 @@ module Ruboty
       on %r<(ruby|rb|irb)\s+(.*)$>, name: 'evaluate', description: 'Evaluate one line of Ruby script'
 
       def evaluate(message)
-        script = message[2]
-        result = Ruboty::Tryruby.evaluate(script)
-        reply_message = result.successful? ? result.output : result.result
-        message.reply(reply_message)
+        Ruboty::Actions::Tryruby.new(message).call
       rescue Exception => e
         Ruboty.logger.info "#{e.class}: #{e.message}"
       end

@@ -1,4 +1,5 @@
 require "ruboty/tryruby/version"
+require "ruboty/handlers/tryruby"
 require "net/http"
 require "json"
 

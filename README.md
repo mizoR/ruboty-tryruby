@@ -2,6 +2,8 @@
 
 Ruboty plugin to evaluate one line of Ruby script
 
+![](images/tryruby.png)
+
 ## Installation
 
 Add this line to your application's Gemfile:

@@ -1,7 +1,3 @@
-require "ruboty/tryruby/version"
-require "ruboty/tryruby/result"
-require "ruboty/handlers/tryruby"
-require "net/http"
 require "json"
 
 module Ruboty

@@ -1,6 +1,6 @@
 # Ruboty::Tryruby
 
-TODO: Write a gem description
+Ruboty plugin to evaluate one line of Ruby script
 
 ## Installation
 

@@ -5,7 +5,7 @@ require "json"
 
 module Ruboty
   module Tryruby
-    def self.execute(command)
+    def self.evaluate(command)
       http = Net::HTTP.new('tryruby.org', 80)
       request = Net::HTTP::Put.new('/levels/1/challenges/0')
       request.set_form_data(cmd: command)

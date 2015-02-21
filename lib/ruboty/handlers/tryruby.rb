@@ -5,7 +5,7 @@ module Ruboty
 
       def evaluate(message)
         script = message[2]
-        result = Ruboty::Tryruby.execute(script)
+        result = Ruboty::Tryruby.evaluate(script)
         reply_message = result.successful? ? result.output : result.result
         message.reply(reply_message)
       rescue Exception => e
